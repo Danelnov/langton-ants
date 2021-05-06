@@ -25,7 +25,7 @@ while True:
         if event.type == pygame.QUIT:
             break
         
-    # Move the ant and update the cell state
+    # Move the ant
     row, column = ant.position # Get the current state of the cell
     ant.move(grid[row, column])
     # Update the cell state
