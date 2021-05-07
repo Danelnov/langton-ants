@@ -1,5 +1,6 @@
 <div align="center">
     <h1>langton's ant</h1>
+    <img src="./images/image.png">
 </div>
 
 ## Install and run

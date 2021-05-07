@@ -27,12 +27,15 @@ while True:
         
     # Move the ant
     row, column = ant.position # Get the current state of the cell
-    ant.move(grid[row, column])
-    # Update the cell state
-    if grid[row, column] == 0:
-        grid[row, column] = 1
+    if row >= 70 or column >= 70:
+        continue
     else:
-        grid[row, column] = 0
+        ant.move(grid[row, column])
+        # Update the cell state
+        if grid[row, column] == 0:
+            grid[row, column] = 1
+        else:
+            grid[row, column] = 0
     
     screen.fill(BLACK)
     
